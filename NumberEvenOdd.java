@@ -14,17 +14,9 @@ public class NumberEvenOdd{
         System.out.println("Enter a number: ");
        
         int num = input.nextInt();
-        String numType = "";
         
-        if(num > 0){
-            numType = "positive";
-        } else if(num == 0){
-            numType = "zero";
-        }else {
-            numType = "negative";
-        }
+        String isEvenOdd = ((num%2)>0)? "Odd" : "Even";
         
-        System.out.println("It's a " + numType + " number.");
-
+        System.out.println(num + " is an " + isEvenOdd + " number");
     }
 }
