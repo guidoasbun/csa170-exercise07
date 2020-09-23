@@ -12,19 +12,19 @@ public class LetterGradeToNumber{
         Scanner input = new Scanner(System.in);
         
         System.out.println("Enter letter grade: ");
-        int numGrade = input.nextInt();
-        char letterGrade = 'F';
+        String letterGrade = input.next();
+        int numGrade = 0;
         
-        if (numGrade == 4){
-            letterGrade = 'A';
-        }else if(numGrade == 3){
-            letterGrade = 'B';
-        }else if(numGrade == 2){
-            letterGrade = 'C';
-        }else if(numGrade == 1){
-            letterGrade = 'D';
+        if (letterGrade.equalsIgnoreCase("A")){
+            numGrade = 4;
+        }else if(letterGrade.equalsIgnoreCase("B")){
+            numGrade = 3;
+        }else if(letterGrade.equalsIgnoreCase("C")){
+            numGrade = 2;
+        }else if(letterGrade.equalsIgnoreCase("D")){
+            numGrade = 1;
         }
         
-        System.out.println
+        System.out.println(numGrade);
     }
 }
